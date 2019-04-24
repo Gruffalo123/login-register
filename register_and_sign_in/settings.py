@@ -120,3 +120,12 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#配置邮件发送参数
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sina.com'
+EMAIL_PORT = 25
+#你在发送服务器对应的用户名和密码
+EMAIL_HOST_USER = 'xxx@sina.com'
+EMAIL_HOST_PASSWORD = 'xxxxxxxx'
