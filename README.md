@@ -3,8 +3,9 @@ tags:`Python`,`Django`,`HTML`,`CSS`,`Bootstrap`
 
 具体实现参考：[原文地址：](http://www.liujiangblog.com/course/django/102)
 
-环境：python3.5  Django2.2
+环境：python3.5  Django2.2  
 
+Just a rookie:relaxed:  
 ### 开发流程:
 
 ## 1、搭建项目环境
