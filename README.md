@@ -1,7 +1,7 @@
 # 基于Django2.2可重用登录与注册系统
 tags:`Python`,`Django`,`HTML`,`CSS`,`Bootstrap`
 
-具体实现步骤：[原文地址：](http://www.liujiangblog.com/course/django/102)
+具体实现参考：[原文地址：](http://www.liujiangblog.com/course/django/102)
 
 环境：python3.5  Django2.2
 
@@ -30,12 +30,12 @@ python manage.py migrate（在数据库中创建真实的数据表）<br>
 
   
 ## 3、admin后台
-在admin中注册模型<br>
-在settings中注册APP（2中已完成）<br>
-在login/admin.py中注册模型<br>
-创建超级管理员->python manage.py createsuperuser<br>
-    http://127.0.0.1:8000/admin/ 可进入管理页面<br>
-可以创建几个测试账号<br>
+&emsp;在admin中注册模型<br>
+&emsp;在settings中注册APP（2中已完成）<br>
+&emsp;在login/admin.py中注册模型<br>
+&emsp;创建超级管理员->python manage.py createsuperuser<br>
+&emsp;    http://127.0.0.1:8000/admin/ 可进入管理页面<br>
+&emsp;可以创建几个测试账号<br>
 
 ## 4、url路由和视图
 路由设计：<br>
@@ -48,7 +48,8 @@ URl | 视图 | 模板 | 说明
 /register/1 | login.views.register | register.html | 注册
 /logout/1 | login.views.logout | 无需专门的页面 | 登出
 
-说明：由于本项目目的是打造一个针对管理系统、应用程序等需求下的可重用的登录/注册app，而不是门户网站、免费博客等无需登录即可访问的网站，所以在url路由、跳转策略和文件结构的设计上都是尽量自成体系。具体访问的策略如下：
+说明：由于本项目目的是打造一个针对管理系统、应用程序等需求下的可重用的登录/注册app，而不是门户网站、免费博客等无需登录即可访问的网站，所以在url路由、跳转策略和文件结构的设计上都是尽量自成体系。  
+具体访问的策略如下：
 
 &emsp;未登录人员，不论是访问index还是login和logout，全部跳转到login界面  
 &emsp;已登录人员，访问login会自动跳转到index页面  
@@ -57,9 +58,9 @@ URl | 视图 | 模板 | 说明
 
 根据策划，修改register_and_sign_in/urls.py  
 
-架构初步视图：  
+架构初步视图:  
 &emsp;路由写好了，就进入login/views.py文件编写视图的框架  
-创建HTML页面文件：  
+创建HTML页面文件:  
 &emsp;在login/templates/login目录中创建三个文件index.html、login.html以及register.html  
 
 测试路由和视图：  
@@ -85,11 +86,11 @@ Django的表单给我们提供了下面三个主要功能：
 &emsp;准备和重构数据用于页面渲染；  
 &emsp;为数据创建HTML表单元素；  
 &emsp;接收和处理用户从表单发送过来的数据。  
-创建表单模型  
+创建表单模型:  
   &emsp;在项目根目录的login文件夹下，新建一个forms.py文件，也就是/login/forms.py  
-修改视图-views.py  
+修改视图-views.py:  
  &emsp; 使用了Django的表单后，就要在视图中进行相应的修改  
-修改login页面  
+修改login页面:  
  &emsp; Django的表单很重要的一个功能就是自动生成HTML的form表单内容  
 手动渲染表单字段  
 
@@ -97,12 +98,12 @@ Django的表单给我们提供了下面三个主要功能：
 为了防止机器人频繁登录网站或者破坏分子恶意登录，很多用户登录和注册系统都提供了图形验证码功能。  
 
 ## 9、session会话
-  保存数据  
+&emsp;保存数据  
 
 ## 10、 注册视图
- &emsp; 注册功能  
-  &emsp;密码加密  
+&emsp;注册功能  
+&emsp;密码加密  
   
 ## 11、使用Django发送邮件
-&emsp;  注意，如果提示邮箱访问错误，可能是没有打开smtp服务，去邮箱设置中打开  
+&emsp;注意，如果提示邮箱访问错误，可能是没有打开smtp服务，去邮箱设置中打开  
 ## 12、邮件注册确认
