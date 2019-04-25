@@ -1,36 +1,38 @@
 # -
 基于Django2.2可重用登录与注册系统
 
+具体实现步骤：原文地址：http://www.liujiangblog.com/course/django/102
+
 环境：python3.5  Django2.2
 
 开发流程
 
 1、搭建项目环境
-  python3.5 Django2.2
-  创建项目以及APP
-  在settings文件中修改时区和语言
-  然后你就可以启动服务试一下啦
+python3.5 Django2.2
+创建项目以及APP
+在settings文件中修改时区和语言
+然后你就可以启动服务试一下啦
   
 2、设计数据模型
 login/models.py
-  数据库模型：
-    用户名
-    密码
-    邮箱地址
-    性别
-    创建时间
-  数据后端文件settings 默认使用SQLite
-  在settings中注册APP
-  创建记录和数据表
-    可以在pycharm的终端执行：
-      python manage.py makemigrations（数据迁移，创建模型）
-      python manage.py migrate（在数据库中创建真实的数据表）
+数据库模型：
+用户名
+密码
+邮箱地址
+性别
+创建时间
+数据后端文件settings 默认使用SQLite
+在settings中注册APP
+创建记录和数据表
+可以在pycharm的终端执行：
+python manage.py makemigrations（数据迁移，创建模型）
+python manage.py migrate（在数据库中创建真实的数据表）
 
   
 3、admin后台
 在admin中注册模型
-  在settings中注册APP（2中已完成）
-  在login/admin.py中注册模型
+在settings中注册APP（2中已完成）
+在login/admin.py中注册模型
 创建超级管理员->python manage.py createsuperuser
 http://127.0.0.1:8000/admin/可进入管理页面
 可以创建几个测试账号
