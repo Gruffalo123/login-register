@@ -5,7 +5,7 @@ tags:`Python`,`Django`,`HTML`,`CSS`,`Bootstrap`
 
 环境：python3.5  Django2.2  
 
-Just a rookie:relaxed:  
+PS:Just a rookie:relaxed:  
 ### 开发流程:
 
 ## 1、搭建项目环境
