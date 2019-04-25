@@ -127,5 +127,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sina.com'
 EMAIL_PORT = 25
 #你在发送服务器对应的用户名和密码
-EMAIL_HOST_USER = 'xxx@sina.com'
-EMAIL_HOST_PASSWORD = 'xxxxxxxx'
+EMAIL_HOST_USER = 'xx@sina.com'
+EMAIL_HOST_PASSWORD = 'xxx'
+
+#注册有效期天数
+CONFIRM_DAYS = 7

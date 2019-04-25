@@ -16,6 +16,7 @@ class User(models.Model):
     #性别choices = gender
     sex = models.CharField(max_length=32,choices=gender,default="男")
     create_time = models.DateTimeField(auto_now=True)
+    has_confirmed = models.BooleanField(default=False)
 
     #更加人性化显示对象信息
     def __str__(self):
@@ -32,3 +33,17 @@ class User(models.Model):
 
         #对象名字的复数
         verbose_name_plural = "用户"
+
+class ConfirmString(models.Model):
+    code = models.CharField(max_length=256)
+    user = models.OneToOneField('User',on_delete=models.CASCADE)
+    create_time = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.user.name + ":  " + self.code
+
+    class meta:
+
+        ordering = ["-create_time"]
+        verbose_name = "确认码"
+        verbose_name_plural = "确认码"
