@@ -1,7 +1,34 @@
 # 基于Django2.2可重用登录与注册系统
-tags:`Python`,`Django`,`HTML`,`CSS`,`Bootstrap`
+tags:`Python`,`Django`,`HTML`,`CSS`,`Bootstrap`  
 
-具体实现参考：[原文地址：](http://www.liujiangblog.com/course/django/102)
+具体实现参考：[原文地址](http://www.liujiangblog.com/course/django/102)
+
+## 功能页面展示：
+#### 登录页面
+![登录页面](https://github.com/Gruffalo123/others/blob/master/index.jpg)  
+
+#### 注册页面
+![注册页面](https://github.com/Gruffalo123/others/blob/master/register.jpg)  
+
+#### 注册主页面
+![注册主页面](https://github.com/Gruffalo123/others/blob/master/register-1.jpg)  
+
+#### 登录（失败，邮件未确认）
+![登录页面](https://github.com/Gruffalo123/others/blob/master/login_wrong.jpg)  
+
+登录失败，未进行邮件确认  
+#### 邮件确认
+![邮件确认](https://github.com/Gruffalo123/others/blob/master/register_confirm.jpg)  
+
+
+#### 登录成功/主页面
+![登录成功/确认成功/主页面](https://github.com/Gruffalo123/others/blob/master/confirm_login.jpg)  
+
+
+#### 后台页面
+![后台页面](https://github.com/Gruffalo123/others/blob/master/admin.jpg)  
+
+
 
 环境：python3.5  Django2.2  
 
