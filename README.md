@@ -2,7 +2,21 @@
 tags:`Python`,`Django`,`HTML`,`CSS`,`Bootstrap`  
 
 具体实现参考：[原文地址](http://www.liujiangblog.com/course/django/102)
-
+## 开发步骤
+- [1. 搭建项目环境](http://www.liujiangblog.com/course/django/103)
+- [2. 设计数据模型](http://www.liujiangblog.com/course/django/104)
+- [3. admin后台](http://www.liujiangblog.com/course/django/105)
+- [4. url路由和视图](http://www.liujiangblog.com/course/django/106)
+- [5. 前端页面设计](http://www.liujiangblog.com/course/django/107)
+- [6. 登录视图](http://www.liujiangblog.com/course/django/108)
+- [7. Django表单](http://www.liujiangblog.com/course/django/109)
+- [8. 图片验证码](http://www.liujiangblog.com/course/django/110)
+- [9. session会话](http://www.liujiangblog.com/course/django/111)
+- [10. 注册视图](http://www.liujiangblog.com/course/django/112)
+- [11.使用Django发送邮件](http://www.liujiangblog.com/course/django/113)
+- [12. 邮件注册确认](http://www.liujiangblog.com/course/django/114)
+- [13. 使用Github管理项目](http://www.liujiangblog.com/course/django/115)
+- [14. 重用app](http://www.liujiangblog.com/course/django/277)
 ## 功能页面展示：
 #### 登录页面
 ![登录页面](https://github.com/Gruffalo123/others/blob/master/index.jpg)  
@@ -133,5 +147,5 @@ Django的表单给我们提供了下面三个主要功能：
 &emsp;密码加密  
   
 ## 11、使用Django发送邮件
-&emsp;注意，如果提示邮箱访问错误，可能是没有打开smtp服务，去邮箱设置中打开  
+&emsp;注意事项： `如果提示邮箱访问错误，可能是没有打开smtp服务，去邮箱设置中打开`
 ## 12、邮件注册确认
