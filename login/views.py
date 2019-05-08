@@ -22,7 +22,7 @@ def make_confirm_string(user):
     return code
 
 
-#记得修改settings文件里的邮箱服务器，发送方以及密码，注册邮箱即为你接收确认信息的邮箱
+# 记得修改settings文件里的邮箱服务器，发送方以及密码，注册邮箱即为你接收确认信息的邮箱
 def send_mail(email, code):
     from django.core.mail import EmailMultiAlternatives
     subject, from_email, to = '来自www.xxx.com的注册确认邮件', 'xxx@sina.com', 'xxx@qq.com'
@@ -38,7 +38,8 @@ def send_mail(email, code):
 
 
 def index(request):
-    pass
+    if not request.session.get('is_login',None):
+        return redirect('/login/')
     return render(request, 'login/index.html')
 
 

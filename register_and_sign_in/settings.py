@@ -105,15 +105,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'zh-hans'
+LANGUAGE_CODE = 'zh-hans'  # 修改
 
-TIME_ZONE = 'Asia/Shanghai'
+TIME_ZONE = 'Asia/Shanghai'  # 修改
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = False
+USE_TZ = False  # 修改
 
 
 # Static files (CSS, JavaScript, Images)
@@ -122,13 +122,13 @@ USE_TZ = False
 STATIC_URL = '/static/'
 
 
-#配置邮件发送参数
+#  配置邮件发送参数
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sina.com'
 EMAIL_PORT = 25
-#你在发送服务器对应的用户名和密码
-EMAIL_HOST_USER = 'xx@sina.com'
+#  你在发送服务器对应的用户名和密码
+EMAIL_HOST_USER = 'xxx@sina.com'
 EMAIL_HOST_PASSWORD = 'xxx'
 
-#注册有效期天数
+#  注册有效期天数
 CONFIRM_DAYS = 7
